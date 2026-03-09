@@ -6,7 +6,7 @@ SheetLink takes security seriously. This document outlines our security measures
 
 ### Pass-Through Design
 - Bank transactions flow directly from Plaid to your Google Sheets
-- Transaction data is NEVER stored on SheetLink servers
+- Transaction data exists on our servers for less than 1 second during sync
 - Your data remains under your control in your Google account
 
 ### Authentication & Authorization
@@ -37,8 +37,8 @@ SheetLink takes security seriously. This document outlines our security measures
 
 The Chrome extension requests minimal permissions:
 - `storage` - Store encrypted tokens and user preferences locally
-- `alarms` - Schedule automatic syncs
 - `identity` - Google OAuth authentication
+- `alarms` - Schedule automatic syncs (optional)
 
 No permissions for:
 - Reading browsing history
@@ -51,11 +51,13 @@ No permissions for:
 | Data Type | Stored? | Encrypted? | Purpose |
 |-----------|---------|------------|---------|
 | Bank credentials | NO | N/A | Handled by Plaid only |
-| Transaction data | NO | N/A | Pass-through to Sheets |
+| Transaction data | NO* | N/A | Pass-through to Sheets (< 1 second) |
 | Plaid tokens | YES | YES | Fetch transactions |
 | Google tokens | YES | YES | Write to Sheets |
 | Email address | YES | NO | Account identification |
 | User preferences | YES | NO | Extension settings |
+
+*Transaction data exists in memory for less than 1 second during sync, then discarded
 
 ## Security Best Practices
 

@@ -1,5 +1,7 @@
 # SheetLink Chrome Extension
 
+**[Available now in the Chrome Web Store](https://chromewebstore.google.com/detail/sheetlink-sync-bank-trans/niehncndbonfankgokhandgbaebdbpch)**
+
 Official Chrome extension for [SheetLink](https://sheetlink.app) - Sync real bank transactions directly into Google Sheets. Privacy-first. Powered by Plaid.
 
 ## Overview
@@ -8,43 +10,51 @@ SheetLink connects your bank accounts to Google Sheets through a secure Chrome e
 
 ## Features
 
-- **Real Bank Data**: Connect to 11,000+ financial institutions via Plaid
+- **Real Bank Data**: Connect to 12,000+ financial institutions via Plaid
 - **Direct Sync**: Transactions flow directly to your Google Sheets
 - **Privacy-First**: Pass-through architecture - transactions are never stored on our servers
-- **Automatic Updates**: Set sync schedules or sync manually anytime
-- **Multi-Bank Support**: Connect multiple institutions to the same sheet
+- **Manual Sync**: On-demand sync via extension popup
+- **Multi-Bank Support**: Connect unlimited bank accounts
+- **Smart Features**: Transaction deduplication, delta sync, Plaid AI categories
 - **Recipe System**: Pre-built templates for budgeting, net worth tracking, and more
 
 ## Plans
 
-### FREE
-- 7 days of transaction history
-- Manual and scheduled syncing
-- Multiple bank accounts
-- Full recipe library access
+### FREE (Available Now)
+- **7 days** of transaction history per institution
+- 11 core transaction fields
+- Manual sync
+- Unlimited bank accounts
+- Recipe library access
+- **FREE forever**
 
 ### PRO
-- Full Plaid transaction history (up to 2 years)
+- **730 days (2 years)** of transaction history per institution
+- 33 enhanced fields (merchant details, location data, and more)
 - All FREE features included
 
 ## Installation
 
-Install from the [Chrome Web Store](#) (coming soon)
+**[Add to Chrome](https://chromewebstore.google.com/detail/sheetlink-sync-bank-trans/niehncndbonfankgokhandgbaebdbpch)**
 
-## How It Works
+## Quick Start
 
-1. Install the extension and sign in with Google
-2. Connect your bank account through Plaid
-3. Create or select a Google Sheet
-4. Transactions sync directly to your sheet
+1. **Install Extension** - Click the "Add to Chrome" link above
+2. **Sign in with Google** - Authorize Google Sheets access (write-only)
+3. **Connect Your Bank** - Select from 12,000+ institutions via Plaid
+4. **Link a Google Sheet** - Paste any Google Sheets URL you own
+5. **Click "Sync Now"** - Your last 7 days of transactions will appear
+
+**Need help?** Full walkthrough with screenshots: [sheetlink.app/get-started](https://sheetlink.app/get-started)
 
 ## Privacy & Security
 
 - Bank credentials never touch SheetLink servers - authentication handled entirely by Plaid
 - Access tokens encrypted with Fernet (AES-128-CBC + HMAC)
 - Pass-through architecture - transactions go directly from Plaid to your Google Sheets
-- Minimal permissions - extension only requests storage and alarms
-- Open authentication flow - review the security documentation
+- Minimal permissions - extension only requests `storage`, `identity`, and `alarms`
+- No transaction data stored - pass-through only (less than 1 second in transit)
+- JWT authentication with 60-minute expiry
 
 See [PRIVACY.md](PRIVACY.md) and [SECURITY.md](SECURITY.md) for complete details.
 

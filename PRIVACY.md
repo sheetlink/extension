@@ -44,8 +44,8 @@ SheetLink's use and transfer of information received from Google APIs adheres to
 
 **How we use it:**
 - Transactions are passed through to your Google Sheets in real-time
-- We do NOT store transaction data on our servers
-- Pass-through architecture means your data never persists in our database
+- Transaction data exists on our servers for less than 1 second during sync
+- Pass-through architecture means your data is immediately discarded after sync
 
 **Why we collect it:**
 To provide the core functionality of syncing bank transactions to your spreadsheets.
@@ -96,8 +96,9 @@ To provide subscription management and enforce plan limits.
 
 - All sensitive data (Plaid tokens, Google tokens) encrypted at rest
 - HTTPS/TLS encryption for all data in transit
-- Transactions never stored on our servers - direct pass-through to Google Sheets
+- Transactions exist in memory for less than 1 second, then discarded
 - Database hosted on secure infrastructure (Railway with PostgreSQL)
+- JWT tokens: 60-minute expiry, browser-only (not stored on servers)
 
 ## Third-Party Services
 
