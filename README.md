@@ -45,7 +45,7 @@ SheetLink connects your bank accounts to Google Sheets through a secure Chrome e
 4. **Link a Google Sheet** - Paste any Google Sheets URL you own
 5. **Click "Sync Now"** - Your last 7 days of transactions will appear
 
-**Need help?** Full walkthrough with screenshots: [sheetlink.app/get-started](https://sheetlink.app/get-started)
+**Need help?** Visit our guide: [sheetlink.app/get-started](https://sheetlink.app/get-started)
 
 ## Privacy & Security
 
