@@ -144,7 +144,9 @@ When you sign in with Google, SheetLink requests the following permissions:
 1. **See your profile info** - Your email address for account identification
 2. **See, edit, create, and delete all your Google Sheets spreadsheets** - Write transaction data to your sheets
 3. **See, edit, create, and delete only the specific Google Drive files you use with this app** - Create new sheets when requested
-4. **Create and update Google Apps Script projects** - Install recipe templates (optional feature)
+4. **Create and update Google Apps Script projects** (optional) - Only requested when you install recipe templates
+
+Note: The Apps Script permission is only requested if you choose to use the recipe feature. You can use SheetLink without this permission for basic transaction syncing.
 
 You can review and revoke these permissions anytime at [Google Account permissions](https://myaccount.google.com/permissions).
 

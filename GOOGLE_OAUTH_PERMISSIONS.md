@@ -22,11 +22,12 @@ Based on Google Cloud Console OAuth configuration (as of March 2026):
 - **Purpose**: Create and manage specific spreadsheets used with SheetLink
 - **User-facing description**: "See, edit, create, and delete only the specific Google Drive files you use with this app"
 
-### 4. Google Apps Script Projects
+### 4. Google Apps Script Projects (OPTIONAL)
 - **Scope**: `https://www.googleapis.com/auth/script.projects`
 - **Classification**: Sensitive (requires approval)
 - **Purpose**: Install recipe templates (optional feature)
 - **User-facing description**: "Create and update Google Apps Script projects"
+- **Important**: This permission is only requested when users choose to install a recipe template. Users can use SheetLink for basic transaction syncing without this permission.
 
 ## Notes for Website Documentation
 
