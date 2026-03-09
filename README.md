@@ -52,7 +52,7 @@ SheetLink connects your bank accounts to Google Sheets through a secure Chrome e
 - Bank credentials never touch SheetLink servers - authentication handled entirely by Plaid
 - Access tokens encrypted with Fernet (AES-128-CBC + HMAC)
 - Pass-through architecture - transactions go directly from Plaid to your Google Sheets
-- Minimal permissions - extension only requests `storage`, `identity`, and `alarms`
+- Minimal permissions - extension only requests `storage` and `identity`
 - No transaction data stored - pass-through only (less than 1 second in transit)
 - JWT authentication with 60-minute expiry
 

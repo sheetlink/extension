@@ -38,7 +38,6 @@ SheetLink takes security seriously. This document outlines our security measures
 The Chrome extension requests minimal permissions:
 - `storage` - Store encrypted tokens and user preferences locally
 - `identity` - Google OAuth authentication
-- `alarms` - Schedule periodic tasks (currently unused)
 
 No permissions for:
 - Reading browsing history
