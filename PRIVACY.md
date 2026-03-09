@@ -1,7 +1,7 @@
 # Privacy Policy
 
 **Effective Date:** March 2026
-**Version:** 0.5.6
+**Version:** 0.8.0
 
 SheetLink is committed to protecting your privacy. This policy explains how we collect, use, and safeguard your data when you use the SheetLink Chrome extension.
 
