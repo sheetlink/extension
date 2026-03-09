@@ -20,7 +20,7 @@ SheetLink connects your bank accounts to Google Sheets through a secure Chrome e
 
 ## Plans
 
-### FREE (Available Now)
+### FREE
 - **7 days** of transaction history per institution
 - All 34 transaction fields
 - Manual sync
