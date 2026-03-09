@@ -14,8 +14,8 @@ SheetLink's use and transfer of information received from Google APIs adheres to
 **What data does SheetLink access?**
 - Google user identity (email, profile) for authentication
 - Google Sheets access to write transaction data
-- Google Drive access to create and manage spreadsheets
-- Google Apps Script access for recipe installation (optional)
+- Google Drive access to create and manage specific spreadsheets you use with SheetLink
+- Google Apps Script access for recipe installation (create and update projects)
 
 **How is Google data used?**
 - User identity: Authentication and account management only
@@ -136,6 +136,17 @@ We may update this policy periodically. Changes will be posted to this page with
 ## Contact
 
 Questions about privacy? Email us at support@sheetlink.app
+
+## Google OAuth Permissions
+
+When you sign in with Google, SheetLink requests the following permissions:
+
+1. **See your profile info** - Your email address for account identification
+2. **See, edit, create, and delete all your Google Sheets spreadsheets** - Write transaction data to your sheets
+3. **See, edit, create, and delete only the specific Google Drive files you use with this app** - Create new sheets when requested
+4. **Create and update Google Apps Script projects** - Install recipe templates (optional feature)
+
+You can review and revoke these permissions anytime at [Google Account permissions](https://myaccount.google.com/permissions).
 
 ## Compliance
 
