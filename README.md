@@ -24,13 +24,14 @@ SheetLink connects your bank accounts to Google Sheets through a secure Chrome e
 - **7 days** of transaction history per institution
 - All 34 transaction fields
 - Manual sync
-- Unlimited bank accounts
+- **1 bank account** (unlimited on Pro)
 - Recipe library access
 - **FREE forever**
 
 ### PRO
 - **730 days (2 years)** of transaction history per institution
 - All 34 transaction fields
+- **Unlimited bank accounts**
 - All FREE features included
 
 ## Installation
@@ -58,6 +59,16 @@ SheetLink connects your bank accounts to Google Sheets through a secure Chrome e
 
 See [PRIVACY.md](PRIVACY.md) and [SECURITY.md](SECURITY.md) for complete details.
 
+## Source Code
+
+This repository contains documentation and release artifacts only. Source code is not published to maintain proprietary protection while still providing transparency through:
+
+- Complete extension builds available in [GitHub Releases](https://github.com/sheetlink/extension/releases)
+- Comprehensive privacy and security documentation
+- Chrome Web Store review process verification
+
+For questions about the source code, security audits, or commercial licensing, contact support@sheetlink.app.
+
 ## Support
 
 - Website: [sheetlink.app](https://sheetlink.app)
@@ -66,6 +77,4 @@ See [PRIVACY.md](PRIVACY.md) and [SECURITY.md](SECURITY.md) for complete details
 
 ## License
 
-This repository contains release documentation only. Extension binaries are distributed under the MIT License.
-
-For questions about the source code or commercial licensing, contact support@sheetlink.app.
+MIT License - See [LICENSE](LICENSE) for details.
