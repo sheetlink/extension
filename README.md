@@ -6,15 +6,14 @@ Official Chrome extension for [SheetLink](https://sheetlink.app) - Sync real ban
 
 ## Overview
 
-SheetLink connects your bank accounts to Google Sheets through a secure Chrome extension. Get real transaction data automatically synced to your spreadsheets - perfect for budgeting, financial tracking, and analysis.
+SheetLink connects your bank accounts to Google Sheets through a secure Chrome extension. Sync real transaction data into your spreadsheets on demand - perfect for budgeting, financial tracking, and analysis. Your bank data flows straight from Plaid to your sheet and is never stored on our servers.
 
 ## Features
 
 - **Real Bank Data**: Connect to 12,000+ financial institutions via Plaid
-- **Direct Sync**: Transactions flow directly to your Google Sheets
+- **Direct Sync**: Transactions flow straight to your Google Sheets
 - **Privacy-First**: Pass-through architecture - transactions are never stored on our servers
-- **Manual Sync**: On-demand sync via extension popup
-- **Multi-Bank Support**: Connect unlimited bank accounts
+- **You Control Sync**: On-demand sync via the extension popup - it only runs when you click
 - **Smart Features**: Transaction deduplication, delta sync, Plaid AI categories
 - **Recipe System**: Pre-built templates for budgeting, net worth tracking, and more
 
@@ -23,20 +22,30 @@ SheetLink connects your bank accounts to Google Sheets through a secure Chrome e
 ### FREE
 - **7 days** of transaction history per institution
 - All 34 transaction fields
-- Manual sync
-- **1 bank account** (unlimited on Pro)
+- **1 bank connection**
+- On-demand sync
 - Recipe library access
-- **FREE forever**
+- **Free forever**
 
 ### PRO
 - **730 days (2 years)** of transaction history per institution
-- All 34 transaction fields
-- **Unlimited bank accounts**
+- **Unlimited bank connections**
+- **Excel add-in** (Microsoft AppSource)
+- Historical backfill + priority support
 - All FREE features included
+
+### MAX
+- Everything in Pro, plus:
+- **CLI** (`sheetlink sync`) for unattended automation on your own machine (cron)
+- **API keys** for programmatic access
+- Output to **JSON, CSV, Postgres, and SQLite**
+- **Claude / MCP** integration
+- For power users piping bank data into their own systems
 
 ## Installation
 
-**[Add to Chrome](https://chromewebstore.google.com/detail/sheetlink-sync-bank-trans/niehncndbonfankgokhandgbaebdbpch)**
+- **Chrome (Google Sheets):** [Add to Chrome](https://chromewebstore.google.com/detail/sheetlink-sync-bank-trans/niehncndbonfankgokhandgbaebdbpch)
+- **Excel (Pro and MAX):** [Get it on Microsoft AppSource](https://marketplace.microsoft.com/en-us/product/office/WA200010463)
 
 ## Quick Start
 
@@ -59,15 +68,17 @@ SheetLink connects your bank accounts to Google Sheets through a secure Chrome e
 
 See [PRIVACY.md](PRIVACY.md) and [SECURITY.md](SECURITY.md) for complete details.
 
-## Source Code
+## Auditable & Verifiable
 
-This repository contains documentation and release artifacts only. Source code is not published to maintain proprietary protection while still providing transparency through:
+We publish the complete, shipped extension so anyone can verify exactly what it does:
 
-- Complete extension builds available in [GitHub Releases](https://github.com/sheetlink/extension/releases)
-- Comprehensive privacy and security documentation
-- Chrome Web Store review process verification
+- **Release builds** in [GitHub Releases](https://github.com/sheetlink/extension/releases) are the same packages published to the Chrome Web Store. Download a release, load it unpacked, and inspect the manifest, permissions, and code yourself.
+- **Privacy and security documentation** ([PRIVACY.md](PRIVACY.md), [SECURITY.md](SECURITY.md)) describes exactly what we access and when.
+- **Chrome Web Store review** independently verifies the published package.
 
-For questions about the source code, security audits, or commercial licensing, contact support@sheetlink.app.
+Our developer tools are fully open source as well: the [CLI](https://github.com/sheetlink/cli), the [MCP server](https://github.com/sheetlink/mcp), and the [recipe library](https://github.com/sheetlink/sheetlink-recipes).
+
+For security audits or commercial licensing questions, contact support@sheetlink.app.
 
 ## Support
 
